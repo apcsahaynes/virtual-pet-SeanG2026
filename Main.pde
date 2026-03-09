@@ -15,14 +15,15 @@ final int MESSAGE_DURATION = 2000; // milliseconds to show the message
 
 void setup() {
   size(600, 500);
-  textFont(createFont("Arial", 16, true));
+  textFont(createFont("Times New Roman", 16, true));
 
-  myPet = new VirtualPet4("Coco");
+  myPet = new VirtualPet("Xmus Jaxon Flaxon-Waxon");
 
   // Buttons sit along the bottom of the screen
   // Button(label, x, y, width, height)
   feedButton = new Button("Feed", 150, 430, 120, 45);
   playButton = new Button("Play", 330, 430, 120, 45);
+  loadPetImages();
 }
 
 void draw() {
